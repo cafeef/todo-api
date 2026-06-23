@@ -4,8 +4,9 @@ API REST completa construída com **Laravel 13** e **Laravel Sanctum** para gere
 
 ## Integrantes
 
-- [NOME DO ALUNO 1]
-- [NOME DO ALUNO 2]
+- Lucas Gabriel
+- Maria Beatriz
+- Fernanda Pacheco
 
 ---
 
