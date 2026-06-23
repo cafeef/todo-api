@@ -10,22 +10,6 @@ API REST completa construída com **Laravel 13** e **Laravel Sanctum** para gere
 
 ---
 
-## Decisão: Exclusão de Categoria com Tarefas Vinculadas
-
-**Decisão adotada: impedir a exclusão.**
-
-Ao tentar excluir uma categoria que possui tarefas vinculadas, a API retorna `HTTP 422` com uma mensagem explicativa. O usuário deve excluir (ou mover) as tarefas primeiro.
-
-**Justificativa:** evitar perda acidental de dados. A exclusão em cascata poderia apagar tarefas importantes sem o usuário perceber.
-
----
-
-## Decisão: user_id direto na tabela tarefas
-
-A tabela `tarefas` possui `user_id` (além de `categoria_id`) para facilitar consultas de autorização — verificar se uma tarefa pertence ao usuário autenticado sem precisar fazer JOIN na tabela `categorias`.
-
----
-
 ## Requisitos
 
 - PHP >= 8.2
@@ -45,7 +29,7 @@ sudo apt-get install php8.3-xml php8.3-sqlite3
 
 ```bash
 # 1. Clonar o repositório
-git clone <URL_DO_REPOSITORIO> todo-api
+git clone https://github.com/cafeef/todo-api.git todo-api
 cd todo-api
 
 # 2. Instalar dependências
