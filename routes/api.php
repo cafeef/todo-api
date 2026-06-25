@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TarefaController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // CRUD de Tarefas (aceita ?status= e ?categoria_id= no index)
     Route::apiResource('tarefas', TarefaController::class);
+
+    // Resumo estatístico das tarefas
+    Route::get('/dashboard/resumo', [DashboardController::class, 'resumo']);
 });
