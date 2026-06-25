@@ -4,9 +4,11 @@ API REST completa construída com **Laravel 13** e **Laravel Sanctum** para gere
 
 ## Integrantes
 
-- Lucas Gabriel
-- Maria Beatriz
-- Fernanda Pacheco
+| Integrante | Atividades desenvolvidas |
+|------------|--------------------------|
+| Fernanda Pacheco | Configuração inicial do projeto, autenticação com Laravel Sanctum (registro, login, logout), definição das rotas de API e implementação dos endpoints de categorias e tarefas |
+| Lucas Gabriel | Organização da estrutura MVC no Laravel: definição dos models com relacionamentos, criação das migrations e separação de responsabilidades entre controllers, Form Requests e models |
+| Maria Beatriz | Implementação da funcionalidade de exportação do histórico de tarefas em PDF, documentação das rotas no README e criação da coleção de testes no Insomnia |
 
 ---
 
@@ -222,7 +224,7 @@ GET /api/tarefas?status=em_andamento&categoria_id=2
   "titulo": "Revisar relatório",
   "descricao": "Revisar o relatório trimestral",
   "status": "pendente",
-  "prazo": "2025-12-31",
+  "prazo": "2026-12-31",
   "categoria_id": 1
 }
 ```
@@ -235,7 +237,7 @@ Resposta `201`:
     "id": 1,
     "titulo": "Revisar relatório",
     "status": "pendente",
-    "prazo": "2025-12-31",
+    "prazo": "2026-12-31",
     "categoria_id": 1,
     "user_id": 1,
     "categoria": { "id": 1, "nome": "Trabalho" }

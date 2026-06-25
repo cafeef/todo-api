@@ -27,12 +27,12 @@ class DatabaseSeeder extends Seeder
 
         // Cria 6 tarefas distribuídas entre as categorias
         $tarefasData = [
-            ['titulo' => 'Preparar relatório mensal',       'status' => 'em_andamento', 'prazo' => '2025-12-31', 'categoria_id' => $categorias[0]->id],
-            ['titulo' => 'Reunião com o cliente',           'status' => 'pendente',     'prazo' => '2025-12-20', 'categoria_id' => $categorias[0]->id],
+            ['titulo' => 'Preparar relatório mensal',       'status' => 'em_andamento', 'prazo' => '2026-12-31', 'categoria_id' => $categorias[0]->id],
+            ['titulo' => 'Reunião com o cliente',           'status' => 'pendente',     'prazo' => '2026-12-20', 'categoria_id' => $categorias[0]->id],
             ['titulo' => 'Consulta médica',                 'status' => 'pendente',     'prazo' => null,          'categoria_id' => $categorias[1]->id],
             ['titulo' => 'Pagar contas do mês',             'status' => 'concluida',    'prazo' => null,          'categoria_id' => $categorias[1]->id],
-            ['titulo' => 'Estudar Laravel',                 'status' => 'em_andamento', 'prazo' => '2025-12-15', 'categoria_id' => $categorias[2]->id],
-            ['titulo' => 'Entregar projeto final do curso', 'status' => 'pendente',     'prazo' => '2025-12-10', 'categoria_id' => $categorias[2]->id],
+            ['titulo' => 'Estudar Laravel',                 'status' => 'em_andamento', 'prazo' => '2026-12-15', 'categoria_id' => $categorias[2]->id],
+            ['titulo' => 'Entregar projeto final do curso', 'status' => 'pendente',     'prazo' => '2026-12-10', 'categoria_id' => $categorias[2]->id],
         ];
 
         foreach ($tarefasData as $dados) {

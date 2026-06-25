@@ -284,7 +284,7 @@
       "url": "{{ _.base_url }}/api/tarefas",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n  \"titulo\": \"Revisar relatório\",\n  \"descricao\": \"Revisar o relatório trimestral\",\n  \"status\": \"pendente\",\n  \"prazo\": \"2025-12-31\",\n  \"categoria_id\": 1\n}"
+        "text": "{\n  \"titulo\": \"Revisar relatório\",\n  \"descricao\": \"Revisar o relatório trimestral\",\n  \"status\": \"pendente\",\n  \"prazo\": \"2026-12-31\",\n  \"categoria_id\": 1\n}"
       },
       "headers": [
         { "name": "Authorization", "value": "Bearer {{ _.token }}" },
