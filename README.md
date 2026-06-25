@@ -260,7 +260,7 @@ Resposta `201`:
 | GET | `/exportar-pdf?token=SEU_TOKEN` | Gera e exibe o histórico de tarefas do usuário logado em formato PDF |
 
 #### GET /exportar-pdf
-    Esta rota valida o token enviado como parâmetro na URL para autenticar o usuário e retornar o stream do arquivo diretamente no navegador.
+**Esta rota valida o token enviado como parâmetro na URL para autenticar o usuário e retornar o stream do arquivo diretamente no navegador.
 ---
 
 ### Erros comuns
